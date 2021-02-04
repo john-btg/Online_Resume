@@ -1,0 +1,413 @@
+@media (min-width:1024px) {
+    * {
+        color: white;
+        font-family: Orbitron;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/fond.jpg");
+    }
+
+    a:hover {
+        border-radius: 10%;
+        background-color: blue;
+    }
+
+    #titre {
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        font-size: 80px;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        color: #fff;
+    }
+
+    #info {
+        position: absolute;
+        top: 25%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    #profil {
+        float: right;
+        margin-right: 10%;
+        height: 230px;
+        width: 200px;
+        border-color: #666 #001e5d;
+        border-image: none;
+        border-radius: 0 0 0 0;
+        border-style: solid;
+        border-width: 18px;
+    }
+
+    #informations {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+
+    }
+
+    #informations table tr td {
+        text-align: center;
+        font-size: 30px;
+        padding: 20px;
+        font-family: Orbitron;
+        color: white;
+    }
+
+    #menu ul {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 90px;
+        font-family: Orbitron;
+    }
+
+    /* positionne la barre de menu */
+    .barres {
+        position: absolute;
+        margin-top: 65px;
+        margin-right: 20px;
+        right: 0;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 6px;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    /* créer le style des barres avant est apres la barre principal */
+    .barres::before,
+    .barres::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: white;
+        transition: 0.5s;
+    }
+
+    /*déplace les barrs à 10 px au dessus et en dessous de la barres principale */
+    .barres::before {
+        top: -10px;
+    }
+
+    .barres::after {
+        top: 10px;
+    }
+
+    /* Création des diférentes pages mais cachées */
+    .droite {
+        position: absolute;
+        background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    /* Style pour la page experience */
+    #xpmenu {
+        color: burlywood;
+        background-image: url("images/xp.jpg");
+        width: 100%;
+
+    }
+
+    #xpmenu div {
+        margin-left: 150px;
+        margin-right: 100px;
+        float: left;
+        font-size: 15px;
+    }
+
+    /* Style pour la page Formation */
+
+    #formationmenu {
+        background-image: url("images/formation.png");
+        width: 100%;
+    }
+
+    #formationmenu table {
+        margin-top: 10%;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #formationmenu table td {
+        width: auto;
+        padding: 20px;
+    }
+
+    .color {
+        background-color: Black;
+        opacity: 0.5;
+    }
+
+    /* Style pour la page Compétence */
+    #skillmenu {
+        background-image: url("images/skill.jpg");
+        text-align: center;
+        width: 100%;
+    }
+
+    .progress {
+        position: absolute;
+        top: 23vh;
+        left: 88vh;
+        width: 10%;
+        height: 5.5rem;
+
+
+    }
+
+    #skillmenu ul li {
+
+        list-style: none;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    /* Style pour la page loisirs */
+
+    #loisirmenu {
+        background-image: url("images/loisir.jpg");
+        width: 100%;
+    }
+
+    #loisirmenu table {
+        margin-top: 200px;
+        font-size: 30px;
+
+    }
+
+    #loisirmenu table td {
+        color: brown;
+        text-align: center;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1023px) {
+    * {
+        color: white;
+        font-family: Orbitron;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("images/fond.jpg");
+    }
+
+    a:hover {
+        border-radius: 10%;
+        background-color: blue;
+    }
+
+    #titre {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        color: #fff;
+    }
+
+    #info {
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font-size: 29px;
+        color: #fff;
+    }
+
+    #profil {
+       
+        margin-right: 20%;
+        height: 230px;
+        width: 200px;
+        position:absolute;
+        border-color: #666 #001e5d;
+        border-image: none;
+        border-radius: 0 0 0 0;
+        border-style: solid;
+        border-width: 18px;
+        
+    }
+
+
+    #informations {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+
+    }
+
+    .table{
+        width: 100%;
+    }
+
+    #menu ul {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 90px;
+        font-family: Orbitron;
+    }
+
+    /* positionne la barre de menu */
+    .barres {
+        position: absolute;
+        margin-top: 65px;
+        margin-right: 20px;
+        right: 0;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 6px;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    /* créer le style des barres avant est apres la barre principal */
+    .barres::before,
+    .barres::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: white;
+        transition: 0.5s;
+    }
+
+    /*déplace les barrs à 10 px au dessus et en dessous de la barres principale */
+    .barres::before {
+        top: -10px;
+    }
+
+    .barres::after {
+        top: 10px;
+    }
+
+    /* Création des diférentes pages mais cachées */
+    .droite {
+        position: absolute;
+        background: #4e54c8;  
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    /* Style pour la page experience */
+    #xpmenu {
+        color: burlywood;
+        background-image: url("images/xp.jpg");
+        width: 100%;
+
+    }
+    #xpmenu iframe{
+       display: none;
+    }
+    #xpmenu div {
+        margin-left: 150px;
+        margin-right: 100px;
+        float: left;
+        font-size: 15px;
+    }
+
+    /* Style pour la page Formation */
+
+    #formationmenu {
+        background-image: url("images/formation.png");
+        width: 100%;
+    }
+
+
+    .color {
+        background-color: Black;
+        opacity: 0.5;
+    }
+
+    /* Style pour la page Compétence */
+    #skillmenu {
+        background-image: url("images/skill.jpg");
+        text-align: center;
+        width: 100%;
+    }
+
+    .progress {
+        position: absolute;
+        top: 23vh;
+        left: 88vh;
+        width: 10%;
+        height: 5.5rem;
+
+
+    }
+
+    #skillmenu ul li {
+
+        list-style: none;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    /* Style pour la page loisirs */
+
+    #loisirmenu {
+        background-image: url("images/loisir.jpg");
+        text-align: center;
+        width: 100%;
+    }
+    #loisirmenu table td{
+        font-size: 14px;
+        color:brown;
+    }
+
+   .table{
+       margin-top:20%;
+   }
+   
+}
+
+
